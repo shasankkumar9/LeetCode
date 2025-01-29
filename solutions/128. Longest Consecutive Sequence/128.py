@@ -9,6 +9,7 @@ class Solution:
         continue
       length = 0
       while num in seen:
+        seen.remove(num)
         num += 1
         length += 1
       ans = max(ans, length)
